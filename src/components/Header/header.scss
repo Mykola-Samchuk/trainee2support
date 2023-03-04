@@ -1,0 +1,44 @@
+@import "/src/scss/variables.scss";
+
+.header-wrapp {
+  padding: 10px 40px;
+  height: 48px;
+  background-color: $black-clr;
+}
+.nav-wrapp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo-wrapp {
+    
+  a {
+    color: $white-clr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 700;
+    img {
+      height: 30px;
+      width: 30px;
+      margin-bottom: 4px;
+    }
+  }
+}
+.nav-link-wrapp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .link-wrapp {
+    margin-left: 20px;
+    a {
+      color: $white-clr;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+  .link-wrapp:first-child {
+    margin-left: 0;
+  }
+}
