@@ -1,0 +1,158 @@
+@import "/src/scss/variables.scss";
+.about-wrapp {
+  height: 100vh;
+  background-image: $back-ground-img;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.about-title {
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.about-text {
+  font-weight: 600;
+  text-align: center;
+}
+@media (max-width: 1199px) {
+  .about-wrapp .about-title {
+    font-size: 48px;
+  }
+}
+@media (max-width: 767px) {
+  .about-wrapp .about-title {
+    font-size: 28px;
+  }
+}
+
+.intro-title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+
+.left-info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .intro-text span {
+    color: $purple-clr;
+    font-weight: 600;
+  }
+}
+.left-img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
+  img {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .left-content {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+
+    display: flex;
+    .left-block {
+      width: 100%;
+    }
+    .right-block {
+      width: 100%;
+    }
+  }
+  .left-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .left-img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10px;
+    img {
+      max-width: 40%;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .left-info {
+    .intro-title {
+      font-size: 24px;
+    }
+  }
+}
+@media (max-width: 575px) {
+  .left-info {
+    .intro-title {
+      font-size: 20px;
+    }
+  }
+}
+
+.principles-content {
+  display: flex;
+}
+.principle-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 33%;
+}
+.principle-img {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  img {
+    width: 50px;
+    height: 50px;
+  }
+}
+.principle-text {
+  height: 100%;
+  margin: 0 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fcccf5;
+}
+.principle-title {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  text-align: center;
+  font-weight: 600;
+}
+
+@media (max-width: 991px) {
+  .principles-content {
+   flex-direction: column;
+   align-items: center;
+
+  }
+  .principle-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .principle-card:last-child{
+    margin-bottom: 0;
+  }
+
+  .principle-title {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+}

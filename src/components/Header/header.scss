@@ -1,11 +1,22 @@
 @import "/src/scss/variables.scss";
 
 .header-wrapp {
-  padding: 10px 40px;
-  height: 48px;
-  background-color: $black-clr;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  height: 52px;
+  transition: 0.2s;
+}
+.header-wrapp.scrolled {
+  background-color: $white-clr;
+  box-shadow: 0px 1px 2px 0px #646464d6;
+}
+.header-inner {
   display: flex;
   align-items: center;
+  padding: 10px 40px;
 }
 // mobile btn
 .mobile-btn {
@@ -24,7 +35,7 @@
     width: 100%;
     height: 3px;
     margin-top: -1px;
-    background: $white-clr;
+    background: $black-clr;
     transition: all 0.3s;
   }
 }
@@ -37,7 +48,7 @@
   left: 0;
   width: 100%;
   height: 3px;
-  background: $white-clr;
+  background: $black-clr;
   margin-top: 8px;
   transition: all 0.3s;
 }
@@ -65,7 +76,7 @@
 }
 .logo-wrapp {
   a {
-    color: $white-clr;
+    color: $black-clr;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -83,9 +94,9 @@
   align-items: center;
   justify-content: space-between;
   .link-wrapp {
-    margin-left: 20px;
+    margin-left: 30px;
     a {
-      color: $white-clr;
+      color: $black-clr;
       font-size: 16px;
       font-weight: 600;
       transition: 0.3s;
@@ -107,52 +118,35 @@
   .nav-link-wrapp {
     .link-wrapp {
       a:hover {
-        color: $blue-hover;
+        color: $purple-clr;
       }
     }
   }
 }
 @media (max-width: 1199px) {
+  .header-inner{
+    padding: 10px 20px;
+  }
   .mobile-btn {
     display: block;
   }
   .nav-link-wrapp {
     position: fixed;
-    top: 66px;
+    top: 0;
     right: -150%;
-    width: 50%;
+    width: 100%;
     height: 100%;
     padding: 20px 20px;
     overflow: auto;
-    background-color: #000000;
+    background-color: $white-clr;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     transition: 0.6s;
     .link-wrapp {
       margin-left: 0;
       margin-bottom: 10px;
       a {
-        color: $white-clr;
-        font-size: 16px;
-        font-weight: 600;
-        transition: 0.3s;
-      }
-    }
-  }
-  .nav-link-wrapp.active {
-    right: 0;
-  }
-}
-@media (max-width: 575px) {
-
-  .nav-link-wrapp {
-    width: 100%;
-    height: 100%;
-    .link-wrapp {
-      margin-left: 0;
-      margin-bottom: 10px;
-      a {
-        color: $white-clr;
+        color: $black-clr;
         font-size: 16px;
         font-weight: 600;
         transition: 0.3s;
@@ -161,5 +155,21 @@
   }
   .nav-link-wrapp.active {
     right: -20px;
+  }
+}
+@media (max-width: 575px) {
+  .nav-link-wrapp {
+    width: 100%;
+    height: 100%;
+    .link-wrapp {
+      margin-left: 0;
+      margin-bottom: 10px;
+      a {
+        color: $black-clr;
+        font-size: 16px;
+        font-weight: 600;
+        transition: 0.3s;
+      }
+    }
   }
 }
