@@ -1,0 +1,104 @@
+@import "/src/scss/variables.scss";
+footer {
+  background-color: $black-blue-clr;
+}
+.footer-up {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  .footer-logo-wrapp {
+    .footer-logo {
+      margin-right: 10px;
+      width: 160px;
+      transition: 0.3s;
+    }
+  }
+  .footer-link {
+    display: flex;
+    align-items: center;
+    li {
+      margin-left: 10px;
+      
+      a {
+        color: $white-clr;
+        font-weight: 400;
+        font-size: 14px;
+        transition: 0.3s;
+      }
+    }
+    li:first-child {
+      margin-left: 0;
+    }
+  }
+}
+.footer-down {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 40px;
+  p {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    a {
+      color: $white-clr;
+      transition: 0.3s;
+    }
+  }
+}
+.footer-down::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+// hover
+@media (min-width: 1200px) {
+  .footer-up {
+    .footer-link {
+      li {
+        a:hover {
+          color: $purple-clr;
+        }
+      }
+    }
+  }
+  .footer-down {
+    p {
+      a:hover {
+        color: $purple-clr;
+      }
+    }
+  }
+}
+@media (max-width: 1199px) {
+  .footer-up {
+    padding: 10px 20px;
+  }
+  .footer-down {
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 767px) {
+  .footer-up {
+    flex-direction: column;
+    .footer-logo-wrapp {
+      .footer-logo {
+        margin-bottom: 10px;
+      }
+    }
+    .footer-link {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      li {
+        margin-left: 6px;
+      }
+    }
+  }
+}
