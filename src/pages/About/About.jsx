@@ -2,6 +2,10 @@ import React from "react";
 import "./about.scss";
 import imghi from "./img/img-hi.png";
 import icon1 from "./img/icon1.png";
+import icon2 from "./img/icons8.png";
+import icon3 from "./img/icons5.png";
+import icon4 from "./img/icons6.png";
+
 
 export default function About() {
   return (
@@ -53,7 +57,7 @@ export default function About() {
             </div>
             <div className="principle-card">
               <div className="principle-img">
-                <img src={icon1} alt="img" />
+                <img src={icon2} alt="img" />
               </div>
               <div className="principle-text">
                 <h4 className="principle-title">Відкритість та чесність</h4>
@@ -69,7 +73,7 @@ export default function About() {
             </div>
             <div className="principle-card">
               <div className="principle-img">
-                <img src={icon1} alt="img" />
+                <img src={icon3} alt="img" />
               </div>
               <div className="principle-text">
                 <h4 className="principle-title">
@@ -87,11 +91,10 @@ export default function About() {
             </div>
             <div className="principle-card">
               <div className="principle-img">
-                <img src={icon1} alt="img" />
+                <img src={icon4} alt="img" />
               </div>
               <div className="principle-text">
                 <h4 className="principle-title">Комунікабельніст</h4>
-
                 <p>
                   Людські стосунки мають найбільшу цінність. Взаємоповага,
                   ввічливість, взаємопідтримка є ключовими елементами людських
