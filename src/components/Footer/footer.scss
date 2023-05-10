@@ -14,6 +14,7 @@ footer {
       transition: 0.3s;
     }
   }
+
   .footer-link {
     display: flex;
     align-items: center;
@@ -75,6 +76,8 @@ footer {
     }
   }
 }
+
+// media query
 @media (max-width: 1199px) {
   .footer-up {
     padding: 10px 20px;
