@@ -104,7 +104,6 @@ export default function About() {
             </div>
           </div>
         </div>
-        <div className="spacer-xl"></div>
       </section>
     </main>
   );
