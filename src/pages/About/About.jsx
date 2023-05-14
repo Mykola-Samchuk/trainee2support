@@ -14,7 +14,7 @@ export default function About() {
         <h1 className="about-title">Trainee to support</h1>
         <p className="about-text">Checkbox Team</p>
       </section>
-      <section className="intro-wrapp">
+      <section className="section-content intro-wrapp">
         <div className="spacer-xl"></div>
         <h2 className="intro-title">
           Привіт! Ти скоро станеш частиною команди Checkbox, вітаємо тебе!
@@ -36,7 +36,7 @@ export default function About() {
           </div>
         </div>
       </section>
-      <section>
+      <section className="section-content section-content">
         <div className="spacer-xl"></div>
         <h2 className="intro-title">Наші фундаментальні принципи</h2>
         <div className="principles-wrapp">
