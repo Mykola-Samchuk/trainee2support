@@ -1,7 +1,7 @@
 import React from "react";
 import "./footer.scss";
 import logo from "./img/logo.png";
-import { NavLink, Routes } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { ROUTES } from "../../router/router";
 
 export default function Footer() {
@@ -14,21 +14,22 @@ export default function Footer() {
           </NavLink>
         </div>
         <ul className="footer-link">
-          <li >
+          <li>
             <NavLink to={ROUTES.first_line}>Перша лінія</NavLink>
           </li>
-          <li >
+          <li>
             <NavLink to={ROUTES.second_line}>Друга лінія</NavLink>
           </li>
-          <li >
+          <li>
             <NavLink to={ROUTES.third_line}>Третя лінія</NavLink>
           </li>
         </ul>
       </div>
       <div className="footer-down">
-        <p>created by 
-          <NavLink to={ROUTES.git_created}>Mykola Samchuk</NavLink>
-          </p>
+        <p>
+          created by
+          <NavLink to={ROUTES.git_created}> Mykola Samchuk</NavLink>
+        </p>
       </div>
     </footer>
   );
