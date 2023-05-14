@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./header.scss";
 import logo from "./img/logo2.png";
+import { NavLink } from "react-router-dom";
+import { ROUTES } from "../../router/router";
 
 export default function Header() {
   // add active class for media query
@@ -20,19 +22,19 @@ export default function Header() {
         <div className="header-inner">
           <nav className="nav-wrapp">
             <div className="logo-wrapp">
-              <a href="#">
+              <NavLink to={ROUTES.about}>
                 <img src={logo} alt="logo" />
-              </a>
+              </NavLink>
             </div>
             <ul className={`nav-link-wrapp ${active ? "active" : ""}`}>
               <li className="link-wrapp">
-                <a href="#">Перша лінія</a>
+                <NavLink to={ROUTES.first_line}>Перша лінія</NavLink>
               </li>
               <li className="link-wrapp">
-                <a href="#">Друга лінія</a>
+                <NavLink to={ROUTES.second_line}>Друга лінія</NavLink>
               </li>
               <li className="link-wrapp">
-                <a href="#">Третя лінія</a>
+                <NavLink to={ROUTES.third_line}>Третя лінія</NavLink>
               </li>
             </ul>
           </nav>
