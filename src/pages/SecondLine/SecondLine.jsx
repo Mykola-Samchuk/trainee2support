@@ -1,6 +1,11 @@
 import React from "react";
+import Banner from "../../components/Banner/Banner";
 
 export default function SecondLine() {
+  // background for banner
+  const bgStyles = {
+    bgYelowPurple: "bgYelowPurple",
+  };
   return (
     <main>
       <Banner title={"Друга лінія лінія"} bgStyle={bgStyles.bgYelowPurple} />
