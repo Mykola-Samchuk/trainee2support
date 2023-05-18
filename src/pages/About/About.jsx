@@ -96,7 +96,7 @@ export default function About() {
                 <img src={icon4} alt="img" />
               </div>
               <div className="principle-text">
-                <h4 className="principle-title">Комунікабельніст</h4>
+                <h4 className="principle-title">Комунікабельність</h4>
                 <p>
                   Людські стосунки мають найбільшу цінність. Взаємоповага,
                   ввічливість, взаємопідтримка є ключовими елементами людських
