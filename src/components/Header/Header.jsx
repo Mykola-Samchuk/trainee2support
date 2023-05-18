@@ -22,19 +22,19 @@ export default function Header() {
         <div className="header-inner">
           <nav className="nav-wrapp">
             <div className="logo-wrapp">
-              <NavLink to={ROUTES.about}>
+              <NavLink to={ROUTES.about} >
                 <img src={logo} alt="logo" />
               </NavLink>
             </div>
             <ul className={`nav-link-wrapp ${active ? "active" : ""}`}>
               <li className="link-wrapp">
-                <NavLink to={ROUTES.first_line}>Перша лінія</NavLink>
+                <NavLink to={ROUTES.first_line} >Перша лінія</NavLink>
               </li>
               <li className="link-wrapp">
                 <NavLink to={ROUTES.second_line}>Друга лінія</NavLink>
               </li>
               <li className="link-wrapp">
-                <NavLink to={ROUTES.third_line}>Третя лінія</NavLink>
+                <NavLink to={ROUTES.third_line} >Третя лінія</NavLink>
               </li>
             </ul>
           </nav>

@@ -9,10 +9,10 @@ footer {
   align-items: center;
   padding: 20px 40px;
   .footer-logo-wrapp {
+    transition: 0.3s;
     .footer-logo {
       margin-right: 10px;
       width: 160px;
-      transition: 0.3s;
     }
   }
 
@@ -21,7 +21,7 @@ footer {
     align-items: center;
     li {
       margin-left: 10px;
-      
+
       a {
         color: $white-clr;
         font-weight: 400;
@@ -61,6 +61,9 @@ footer {
 // hover
 @media (min-width: 1200px) {
   .footer-up {
+    .footer-logo-wrapp:hover {
+      opacity: 0.7;
+    }
     .footer-link {
       li {
         a:hover {
