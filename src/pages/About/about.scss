@@ -1,31 +1,4 @@
 @import "/src/scss/variables.scss";
-.about-wrapp {
-  height: 100vh;
-  background-image: $back-ground-img;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.about-title {
-  font-weight: 900;
-  text-align: center;
-  margin-bottom: 12px;
-}
-.about-text {
-  font-weight: 600;
-  text-align: center;
-}
-@media (max-width: 1199px) {
-  .about-wrapp .about-title {
-    font-size: 48px;
-  }
-}
-@media (max-width: 767px) {
-  .about-wrapp .about-title {
-    font-size: 28px;
-  }
-}
 
 .intro-title {
   text-align: center;
@@ -136,7 +109,7 @@
   margin: 0 10px;
   padding: 20px;
   border-radius: 10px;
-  background-color: #fcccf5;
+  background-color: #ffc2f6;
 }
 .principle-title {
   margin-bottom: 15px;

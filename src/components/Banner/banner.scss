@@ -1,0 +1,34 @@
+@import "/src/scss/variables.scss";
+
+.banner-wrapp {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.bgYelowBlue{
+  background-image: $back-ground-img;
+}
+.bgYelowPurple{
+  background-image: $back-ground-img-yp;
+}
+.banner-title {
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.banner-text {
+  font-weight: 600;
+  text-align: center;
+}
+@media (max-width: 1199px) {
+  .banner-wrapp .banner-title {
+    font-size: 48px;
+  }
+}
+@media (max-width: 767px) {
+  .banner-wrapp .banner-title {
+    font-size: 28px;
+  }
+}

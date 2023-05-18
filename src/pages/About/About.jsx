@@ -5,15 +5,17 @@ import icon1 from "./img/icon1.png";
 import icon2 from "./img/icons8.png";
 import icon3 from "./img/icons5.png";
 import icon4 from "./img/icons6.png";
+import Banner from "../../components/Banner/Banner";
 
 
 export default function About() {
+  const bgStyles = {
+    bgYelowBlue: "bgYelowBlue"
+  }
+  
   return (
     <main className="app-wrapp">
-      <section className="about-wrapp">
-        <h1 className="about-title">Trainee to support</h1>
-        <p className="about-text">Checkbox Team</p>
-      </section>
+      <Banner title={'Trainee to support'} text={`Checkbox Team`}  bgStyle={bgStyles.bgYelowBlue}/>
       <section className="section-content intro-wrapp">
         <div className="spacer-xl"></div>
         <h2 className="intro-title">
