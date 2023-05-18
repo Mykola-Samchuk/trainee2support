@@ -30,21 +30,6 @@ export default function FirstLine() {
             );
           })}
         </div>
-        {/* <div className="spacer-xl"></div>
-        <div className="first-wrapp">
-          <h2 className="intro-title">
-            Модулі для опрацювання та підготовки першої лінії.
-          </h2>
-          <ul className="first-line-list">
-            {data.map((item) => {
-              return (
-                <li className="first-list-item" key={item.id}>
-                  <NavLink className="list-item-link">{item.name}</NavLink>
-                </li>
-              );
-            })}
-          </ul>
-        </div> */}
       </section>
     </main>
   );
