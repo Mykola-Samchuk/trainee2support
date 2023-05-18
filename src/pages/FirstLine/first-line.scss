@@ -1,5 +1,39 @@
 @import "/src/scss/variables.scss";
 
-.content{
-    margin-top: 70px;
+.first-line-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.list-item-link {
+  border-radius: 15px;
+  background-color: $background-light-yellow;
+  padding: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 80%;
+  transition: 0.3s;
+  .item-link-name {
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .item-link-name:last-child {
+    margin-bottom: 0px;
+  }
+}
+@media (min-width: 1200px) {
+  .list-item-link:hover {
+    color: $purple-clr;
+    box-shadow: 0px 0px 13px 0px rgb(240 146 255);
+  }
+}
+@media (max-width: 1199px) {
+  .list-item-link {
+    padding: 20px;
+    margin-bottom: 15px;
+    .item-link-name {
+      margin-bottom: 8px;
+    }
+  }
 }

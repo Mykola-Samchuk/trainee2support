@@ -5,6 +5,7 @@ import About from "../pages/About/About";
 import FirstLine from "../pages/FirstLine/FirstLine";
 import SecondLine from "../pages/SecondLine/SecondLine";
 import ThirdLine from "../pages/ThirdLine/ThirdLine";
+import { fetchFirstAllLessons } from "../pages/FirstLine/fetchFirstAllLessons";
 
 export const ROUTES = {
   git_created: "https://github.com/Mykola-Samchuk",
@@ -26,6 +27,7 @@ export const router = createHashRouter([
       {
         path: ROUTES.first_line,
         element: <FirstLine />,
+        loader:fetchFirstAllLessons,
       },
       {
         path: ROUTES.second_line,
