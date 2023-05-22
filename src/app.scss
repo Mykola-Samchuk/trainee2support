@@ -473,53 +473,53 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-h1 {
+h1, .h1 {
   font-size: 96px;
   line-height: 1.2em;
 }
-h2 {
+h2, .h2{
   font-size: 40px;
   line-height: 1.2em;
 }
-h3 {
+h3, .h3{
   font-size: 24px;
 }
-h4 {
+h4, .h4{
   font-size: 20px;
 }
-h5 {
+h5, .h5{
   font-size: 18px;
 }
 .title-wrapp {
   font-weight: 700;
 }
 @media (max-width: 991px) {
-  h2 {
+  h2, .h2{
     font-size: 36px;
   }
-  h3 {
+  h3, .h3{
     font-size: 20px;
   }
-  h4 {
+  h4, .h4{
     font-size: 18px;
   }
-  h5 {
+  h5, .h5{
     font-size: 16px;
   }
 }
 @media (max-width: 767px) {
-  h2 {
+  h2, .h2{
     font-size: 30px;
   }
-  h3 {
+  h3, .h3{
     font-size: 18px;
   }
-  h4 {
+  h4, .h4{
     font-size: 16px;
   }
 }
 @media (max-width: 575px) {
-  h2 {
+  h2, .h2{
     font-size: 24px;
   }
 }

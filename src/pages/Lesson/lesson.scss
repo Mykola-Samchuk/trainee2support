@@ -1,0 +1,38 @@
+@import "/src/scss/variables.scss";
+
+.banner-lesson{
+    margin-top: 70px;
+    padding: 40px;
+    background-color: $purple-clr;
+    color: $white-clr;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.lesson-title{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.lesson-question-wrapp{
+    h2{
+        text-align: center;
+        margin-bottom: 30px;
+        font-weight: 600;
+    }
+}
+.question-title{
+    position: relative;
+    padding: 20px;
+    border-bottom: 1px solid #BCBCBC;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.question-status{
+    display: block;
+    min-width: 5px;
+    height: 5px;
+    background-color: black;
+    border-radius: 100%;
+    margin-left: 20px;
+}
