@@ -1,0 +1,47 @@
+@import "/src/scss/variables.scss";
+
+.list-title {
+  position: relative;
+  padding: 20px;
+  border-bottom: 1px solid #bcbcbc;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: 0.3s;
+  p {
+    font-size: 18px;
+    transition: 0.3s;
+  }
+}
+.list-status {
+  display: block;
+  min-width: 15px;
+  height: 15px;
+  background-color: rgb(126, 126, 126);
+  border-radius: 100%;
+  margin-left: 20px;
+  transition: 0.3s;
+}
+.list-status.active {
+  background-color: rgb(49, 236, 11);
+}
+@media (min-width: 1200px) {
+  .list-title:hover p {
+    color: $purple-clr;
+  }
+}
+@media (max-width: 1199px) {
+  .list-title {
+    padding: 10px;
+    margin-bottom: 25px;
+    p {
+      font-size: 16px;
+    }
+  }
+  .list-status {
+    min-width: 12px;
+    height: 12px;
+  }
+}

@@ -1,38 +1,60 @@
 @import "/src/scss/variables.scss";
 
-.banner-lesson{
-    margin-top: 70px;
-    padding: 40px;
-    background-color: $purple-clr;
-    color: $white-clr;
+.banner-lesson {
+  margin-top: 70px;
+  padding: 40px;
+  background-color: $purple-clr;
+  color: $white-clr;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.lesson-title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.lesson-wrapp {
+  h2 {
     text-align: center;
-    margin-bottom: 100px;
-}
-.lesson-title{
+    margin-bottom: 30px;
     font-weight: 600;
-    margin-bottom: 10px;
-}
-.lesson-question-wrapp{
-    h2{
-        text-align: center;
-        margin-bottom: 30px;
-        font-weight: 600;
-    }
-}
-.question-title{
-    position: relative;
-    padding: 20px;
-    border-bottom: 1px solid #BCBCBC;
-    margin-bottom: 20px;
+  }
+  .lesson-list {
+    padding: 15px 10px;
+    border-radius: 15px;
+    background-color: $background-light-purple;
+  }
+  .lesson-links {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    .lesson-link {
+      padding: 10px;
+      word-break: break-all;
+    }
+  }
 }
-.question-status{
-    display: block;
-    min-width: 5px;
-    height: 5px;
-    background-color: black;
-    border-radius: 100%;
-    margin-left: 20px;
+@media (min-width: 1200px) {
+  .lesson-link:hover {
+    color: $purple-clr;
+  }
+}
+@media (max-width: 1199px) {
+  .banner-lesson {
+    padding: 30px;
+    margin-bottom: 50px;
+  }
+
+  .lesson-wrapp {
+    h2 {
+      margin-bottom: 20px;
+    }
+    .lesson-list {
+      padding: 10px 5px;
+
+    }
+    .lesson-links {
+      .lesson-link {
+        padding: 5px;
+      }
+    }
+  }
 }
