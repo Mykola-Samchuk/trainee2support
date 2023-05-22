@@ -15,6 +15,10 @@ export default function Header() {
       setScrolled(true);
     } else setScrolled(false);
   });
+  // handler click for for close mobile menu
+  const handlerLinkClose = ()=>{
+    setActive(!active)
+  }
 
   return (
     <>
@@ -28,13 +32,13 @@ export default function Header() {
             </div>
             <ul className={`nav-link-wrapp ${active ? "active" : ""}`}>
               <li className="link-wrapp">
-                <NavLink to={ROUTES.first_line} >Перша лінія</NavLink>
+                <NavLink to={ROUTES.first_line} onClick={handlerLinkClose}>Перша лінія</NavLink>
               </li>
               <li className="link-wrapp">
-                <NavLink to={ROUTES.second_line}>Друга лінія</NavLink>
+                <NavLink to={ROUTES.second_line} onClick={handlerLinkClose}>Друга лінія</NavLink>
               </li>
               <li className="link-wrapp">
-                <NavLink to={ROUTES.third_line} >Третя лінія</NavLink>
+                <NavLink to={ROUTES.third_line} onClick={handlerLinkClose}>Третя лінія</NavLink>
               </li>
             </ul>
           </nav>
