@@ -8,7 +8,7 @@ export default function FirstLine() {
   };
   return (
     <main>
-      <Banner title={"Третя лінія лінія"} bgStyle={bgStyles.bgPurpleBlue} />
+      <Banner title={"Третя лінія"} bgStyle={bgStyles.bgPurpleBlue} />
       <section className="section-content">в процесі...</section>
     </main>
   );

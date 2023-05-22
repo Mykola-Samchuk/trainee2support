@@ -8,7 +8,7 @@ export default function SecondLine() {
   };
   return (
     <main>
-      <Banner title={"Друга лінія лінія"} bgStyle={bgStyles.bgBlueOrange} />
+      <Banner title={"Друга лінія"} bgStyle={bgStyles.bgBlueOrange} />
       <section className="section-content">в процесі...</section>
     </main>
   );
