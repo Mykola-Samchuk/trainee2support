@@ -7,15 +7,18 @@ import icon3 from "./img/icons5.png";
 import icon4 from "./img/icons6.png";
 import Banner from "../../components/Banner/Banner";
 
-
 export default function About() {
   const bgStyles = {
-    bgYelowBlue: "bgYelowBlue"
-  }
-  
+    bgYelowBlue: "bgYelowBlue",
+  };
+
   return (
     <main className="app-wrapp">
-      <Banner title={'Trainee to support'} text={`Checkbox Team`}  bgStyle={bgStyles.bgYelowBlue}/>
+      <Banner
+        title={"Trainee to support"}
+        text={`Checkbox Team`}
+        bgStyle={bgStyles.bgYelowBlue}
+      />
       <section className="section-content intro-wrapp">
         <div className="spacer-xl"></div>
         <h2 className="intro-title">
@@ -104,6 +107,19 @@ export default function About() {
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="section-content section-content">
+        <div className="spacer-xl"></div>
+        <div className="add_to-wrapp">
+          <div className="add_to-content">
+            <h2 className="intro-title">Приєднуйся до нашої команди!</h2>
+            <p className="h3">
+              Наша ІТ команда розробила круте ПЗ, яке повністю замінює касовий
+              апарат, допомагає бізнесу вбивати на корені бюрократію та
+              економити масу ресурсів та грошей
+            </p>
           </div>
         </div>
       </section>

@@ -6,7 +6,7 @@
   font-weight: 600;
 }
 .intro-wrapp {
-  .left-content{
+  .left-content {
     flex-direction: column-reverse;
     align-items: center;
   }
@@ -21,7 +21,7 @@
       color: $purple-clr;
       font-weight: 600;
     }
-    .intro-text{
+    .intro-text {
       text-align: center;
     }
   }
@@ -134,5 +134,31 @@
   .principle-title {
     margin-bottom: 10px;
     margin-top: 10px;
+  }
+}
+.add_to-wrapp {
+  height: 600px;
+  width: 100%;
+  border-radius: 15px;
+  background-color: $background-light-yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .add_to-content {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 500;
+    .h3 {
+      line-height: 1.5;
+    }
+  }
+}
+@media (max-width: 991px) {
+  .add_to-wrapp {
+    height: 450px;
+    .add_to-content {
+      width: 80%;
+    }
   }
 }
