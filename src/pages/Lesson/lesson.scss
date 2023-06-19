@@ -26,6 +26,9 @@
   .lesson-links {
     display: flex;
     flex-direction: column;
+    padding: 15px 10px;
+    border-radius: 15px;
+    background-color: $background-light-yellow;
     .lesson-link {
       padding: 10px;
       word-break: break-all;
@@ -49,7 +52,6 @@
     }
     .lesson-list {
       padding: 10px 5px;
-
     }
     .lesson-links {
       .lesson-link {
