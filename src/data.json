@@ -134,7 +134,7 @@
     {
       "id": 4,
       "name": "Модуль 4",
-      "title": "Знайомство з порталом Checkbox / Checkbox-kasa. Частина 3",
+      "title": "Знайомство з порталом Checkbox / Checkbox-kasa. Checkbox Pay. Частина 3",
       "question": [
         "Яким чином можна працювати з чекбокс, якщо в мене планшет IOS?",
         "Чи обов’язково переносити товари в Чекбокс, якщо я маю свою програму обліку, з якою буду працювати?",
@@ -165,7 +165,8 @@
         "https://wiki.checkbox.ua/",
         "https://www.youtube.com/watch?v=FR_lj8bAQno&ab_channel=Checkbox",
         "https://www.youtube.com/watch?v=eX3fwwzXEBQ&ab_channel=Checkbox",
-        "https://www.youtube.com/@checkbox2876"
+        "https://www.youtube.com/@checkbox2876",
+        "https://wiki.checkbox.ua/uk/app/pc/portal_acquiring"
       ]
     },
 
