@@ -56,6 +56,7 @@
 .mobile-btn:before {
   margin-top: -10px;
 }
+
 // mobile btn + avtive
 .mobile-btn.active span {
   opacity: 0;
@@ -107,6 +108,18 @@
     margin-left: 0;
   }
 }
+.office-wrapp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+  svg{
+    path{
+      transition: 0.3s;
+    }
+  }
+}
+
 // hover
 @media (min-width: 1200px) {
   .logo-wrapp {
@@ -124,9 +137,12 @@
       }
     }
   }
+  .office-wrapp:hover svg path{
+    fill: $purple-clr;
+  }
 }
 @media (max-width: 1199px) {
-  .header-inner{
+  .header-inner {
     padding: 0 20px;
   }
   .mobile-btn {
@@ -157,6 +173,10 @@
   }
   .nav-link-wrapp.active {
     right: -20px;
+  }
+  .office-wrapp {
+    margin-left: 0px;
+    margin-right: 10px;
   }
 }
 @media (max-width: 575px) {
