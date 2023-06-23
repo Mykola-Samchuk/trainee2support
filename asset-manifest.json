@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/trainee2support/static/css/main.dbc47644.css",
+    "main.css": "/trainee2support/static/css/main.7d27a7b8.css",
     "main.js": "/trainee2support/static/js/main.5540d21f.js",
     "static/media/img-hi.png": "/trainee2support/static/media/img-hi.628aadf0df0c28b1ed71.png",
     "static/media/racoon-checkbox-01.png": "/trainee2support/static/media/racoon-checkbox-01.72571f5aec456a440621.png",
     "static/media/logo.png": "/trainee2support/static/media/logo.30b3570cd8ceef88c647.png",
     "static/media/logo2.png": "/trainee2support/static/media/logo2.44c71b009da619126350.png",
     "index.html": "/trainee2support/index.html",
-    "main.dbc47644.css.map": "/trainee2support/static/css/main.dbc47644.css.map",
+    "main.7d27a7b8.css.map": "/trainee2support/static/css/main.7d27a7b8.css.map",
     "main.5540d21f.js.map": "/trainee2support/static/js/main.5540d21f.js.map"
   },
   "entrypoints": [
-    "static/css/main.dbc47644.css",
+    "static/css/main.7d27a7b8.css",
     "static/js/main.5540d21f.js"
   ]
 }
