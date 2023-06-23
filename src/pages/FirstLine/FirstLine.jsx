@@ -23,13 +23,30 @@ export default function FirstLine() {
         <div className="first-line-list">
           {data.map((item) => {
             return (
-              <NavLink className="list-item-link" key={item.id} to={ROUTES.lesson(item.id)}>
-                
+              <NavLink
+                className="list-item-link"
+                key={item.id}
+                to={ROUTES.lesson(item.id)}
+              >
                 <h4 className="item-link-name">{item.name}</h4>
                 <h5 className="item-link-title">{item.title}</h5>
               </NavLink>
             );
           })}
+        </div>
+      </section>
+      <section className="section-content section-content">
+        <div className="spacer-xl"></div>
+        <div className="content-blc-full">
+          <div className="first-interesting">
+            <div className="content-blc-wrapp">
+              <h2 className="content-blc-title">Цікаво знати!</h2>
+              <p className="h3 content-blc-text">
+                Ти не зупиняєшся та хочеш більше інформації? Тоді тобі сюди!!!
+              </p>
+              <NavLink className="btn color2">Детальніше</NavLink>
+            </div>
+          </div>
         </div>
       </section>
     </main>

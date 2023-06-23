@@ -638,3 +638,34 @@ p {
     }
   }
 }
+
+// content-blc-full
+.content-blc-full {
+  height: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-blc-wrapp {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 500;
+  .content-blc-title{
+    line-height: 1.5;
+    font-weight: 600;
+    margin-bottom: 50px;
+  }
+}
+.content-blc-wrapp>*{
+  margin-bottom: 30px;
+}
+.content-blc-wrapp>*:last-child{
+  margin-bottom: 0
+}
+@media (max-width: 991px) {
+  .content-blc-full {
+    height: 450px;
+  }
+}
