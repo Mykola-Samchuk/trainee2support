@@ -1,57 +1,60 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./header.scss";
 import logo from "./img/logo2.png";
 import { NavLink } from "react-router-dom";
 import { ROUTES } from "../../router/router";
 
 export default function Header() {
-    // add active class for media query
+//------------ Для перевірки --------------
+// // add active class for media query
+// const [active, setActive] = useState(false);
+// const [scrolled, setScrolled] = useState(false);
+
+// // add listener for header
+// window.addEventListener("scroll", function () {
+//   if (window.scrollY > 10) {
+//     setScrolled(true);
+//   } else setScrolled(false);
+// });
+// // handler click for for close mobile menu
+// const handlerLinkClose = () => {
+//   setActive(!active);
+// };
+
+
   const [active, setActive] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  // add listener for header
   window.addEventListener("scroll", function () {
     if (window.scrollY > 10) {
       setScrolled(true);
     } else setScrolled(false);
   });
-  // handler click for for close mobile menu
+
   const handlerLinkClose = () => {
-    setActive(!active);
+    if (active) {
+      setActive(false);
+      enableScroll();
+    }
   };
-  // const [active, setActive] = useState(false);
-  // const [scrolled, setScrolled] = useState(false);
 
-  // // handler click for open and close mobile menu
-  // const handlerLinkClose = () => {
-  //   setActive(!active);
-  // };
-  
-  // // Stop scroll if mobile menu open
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const isScrolled = window.scrollY > 10;
-  //     setScrolled(isScrolled);
-  //   };
+  const handleMenuToggle = () => {
+    setActive((prevState) => !prevState);
 
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
+    if (!active) {
+      disableScroll();
+    } else {
+      enableScroll();
+    }
+  };
 
-  // useEffect(() => {
-  //   if (active) {
-  //     document.documentElement.classList.add("scroll-locked");
-  //     document.body.classList.add("scroll-locked");
-  //   } else {
-  //     document.documentElement.classList.remove("scroll-locked");
-  //     document.body.classList.remove("scroll-locked");
-  //   }
-  // }, [active]);
+  const disableScroll = () => {
+    document.body.classList.add("scroll-locked");
+  };
 
-
-
+  const enableScroll = () => {
+    document.body.classList.remove("scroll-locked");
+  };
   return (
     <>
       <header className={`header-wrapp ${scrolled ? "scrolled" : ""}`}>
@@ -96,9 +99,11 @@ export default function Header() {
           </NavLink>
           <div
             className={`mobile-btn ${active ? "active" : ""}`}
-            onClick={() => {
-              setActive(!active);
-            }}
+            onClick={handleMenuToggle}
+            // onClick={() => {
+            //   setActive(!active);
+
+            // }}
           >
             <span></span>
           </div>
@@ -107,19 +112,19 @@ export default function Header() {
     </>
   );
 }
-  // ----- Залишити для перевірки ----------
-  // // add active class for media query
-  // const [active, setActive] = useState(false);
-  // const [scrolled, setScrolled] = useState(false);
+// ----- Залишити для перевірки ----------
+// // add active class for media query
+// const [active, setActive] = useState(false);
+// const [scrolled, setScrolled] = useState(false);
 
-  // // add listener for header
-  // window.addEventListener("scroll", function () {
-  //   if (window.scrollY > 10) {
-  //     setScrolled(true);
-  //   } else setScrolled(false);
-  // });
-  // // handler click for for close mobile menu
-  // const handlerLinkClose = () => {
-  //   setActive(!active);
-  // };
-  // -------------------------------------------
+// // add listener for header
+// window.addEventListener("scroll", function () {
+//   if (window.scrollY > 10) {
+//     setScrolled(true);
+//   } else setScrolled(false);
+// });
+// // handler click for for close mobile menu
+// const handlerLinkClose = () => {
+//   setActive(!active);
+// };
+// -------------------------------------------
