@@ -2,7 +2,7 @@ import React from "react";
 import "./first-line.scss";
 import Banner from "../../components/Banner/Banner";
 import { NavLink, useLoaderData } from "react-router-dom";
-import { ROUTES } from "../../router/router";
+import { ROUTES } from "../../router/ROUTES";
 
 export default function FirstLine() {
   const data = useLoaderData();

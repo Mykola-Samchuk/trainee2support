@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./header.scss";
 import logo from "./img/logo2.png";
 import { NavLink } from "react-router-dom";
-import { ROUTES } from "../../router/router";
+import { ROUTES } from "../../router/ROUTES";
 
 export default function Header() {
 //------------ Для перевірки --------------

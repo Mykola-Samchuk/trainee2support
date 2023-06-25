@@ -2,7 +2,7 @@ import React from "react";
 import "./footer.scss";
 import logo from "./img/logo.png";
 import { NavLink } from "react-router-dom";
-import { ROUTES } from "../../router/router";
+import { ROUTES } from "../../router/ROUTES";
 
 export default function Footer() {
   return (

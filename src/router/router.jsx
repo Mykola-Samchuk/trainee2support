@@ -8,15 +8,8 @@ import ThirdLine from "../pages/ThirdLine/ThirdLine";
 import { fetchFirstAllLessons } from "../pages/FirstLine/fetchFirstAllLessons";
 import Lesson from "../pages/Lesson/Lesson";
 import { fetchLessonByIdRouted } from "../pages/Lesson/fetchLessonById";
+import { ROUTES } from "./ROUTES";
 
-export const ROUTES = {
-  git_created: "https://github.com/Mykola-Samchuk",
-  about: "/",
-  first_line: "/first_line",
-  second_line: "/second_line",
-  third_line: "/third_line",
-  lesson: (id = null) => (id ? `/first_line/${id}` : "/first_line/:lessonId"),
-};
 
 const ScrollToTop = () => {
   const location = useLocation();
