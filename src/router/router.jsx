@@ -1,5 +1,5 @@
-import React from "react";
-import { createHashRouter } from "react-router-dom";
+import React, { useEffect } from "react";
+import { createHashRouter, useLocation } from "react-router-dom";
 import Layout from "../Layout";
 import About from "../pages/About/About";
 import FirstLine from "../pages/FirstLine/FirstLine";
@@ -18,10 +18,25 @@ export const ROUTES = {
   lesson: (id = null) => (id ? `/first_line/${id}` : "/first_line/:lessonId"),
 };
 
+const ScrollToTop = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
+  return null;
+};
+
 export const router = createHashRouter([
   {
     path: ROUTES.about,
-    element: <Layout />,
+    element: (
+      <>
+        <ScrollToTop />
+        <Layout />
+      </>
+    ),
     children: [
       {
         element: <About />,
