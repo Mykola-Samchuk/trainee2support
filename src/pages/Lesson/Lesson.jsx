@@ -6,7 +6,6 @@ import LessonList from "../../components/LessonList/LessonList";
 export default function Lesson() {
   const lesson = useLoaderData();
 
-  console.log(lesson);
 
   return (
     <>
