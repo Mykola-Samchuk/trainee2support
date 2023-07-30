@@ -7,16 +7,16 @@
   align-items: center;
   justify-content: center;
 }
-.bgYelowBlue{
+.bgYelowBlue {
   background-image: $back-ground-img;
 }
-.bgYelowPurple{
+.bgYelowPurple {
   background-image: $back-ground-img-yp;
 }
-.bgBlueOrange{
+.bgBlueOrange {
   background-image: $back-ground-img-bo;
 }
-.bgPurpleBlue{
+.bgPurpleBlue {
   background-image: $back-ground-img-pb;
 }
 .banner-title {
@@ -28,6 +28,7 @@
   font-weight: 600;
   text-align: center;
 }
+
 @media (max-width: 1199px) {
   .banner-wrapp .banner-title {
     font-size: 48px;
@@ -36,5 +37,58 @@
 @media (max-width: 767px) {
   .banner-wrapp .banner-title {
     font-size: 28px;
+  }
+}
+
+// Banner Type2
+.banner-wrapp.bglite {
+  margin-top: 70px;
+  height: 100%;
+  padding: 40px;
+  background-color: $purple-clr;
+  color: $white-clr;
+  text-align: center;
+  margin-bottom: 70px;
+  .banner-title {
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  .lesson-list {
+    padding: 15px 10px;
+    border-radius: 15px;
+    background-color: $background-light-purple;
+  }
+}
+@media (max-width: 1199px) {
+  .banner-wrapp.bglite {
+    padding: 30px;
+    margin-bottom: 50px;
+    .banner-title.h2 {
+      font-size: 36px;
+    }
+  }
+}
+@media (max-width: 991x) {
+  .banner-wrapp.bglite {
+    .banner-title.h2 {
+      font-size: 30px;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .banner-wrapp.bglite {
+    .banner-title.h2 {
+      font-size: 30px;
+    }
+  }
+}
+@media (max-width: 575px) {
+  .banner-wrapp.bglite {
+    .banner-title.h2 {
+      font-size: 24px;
+    }
   }
 }

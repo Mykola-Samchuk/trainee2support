@@ -44,7 +44,7 @@ export default function FirstLine() {
                 <p className="h3 content-blc-text">
                   Ти не зупиняєшся та хочеш більше інформації? Тоді тобі сюди!!!
                 </p>
-                <NavLink className="btn color2">Детальніше</NavLink>
+                <NavLink to="/interesting_first_line" className="btn color2">Детальніше</NavLink>
               </div>
             </div>
           </div>

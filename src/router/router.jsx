@@ -9,6 +9,7 @@ import { fetchFirstAllLessons } from "../pages/FirstLine/fetchFirstAllLessons";
 import Lesson from "../pages/Lesson/Lesson";
 import { fetchLessonByIdRouted } from "../pages/Lesson/fetchLessonById";
 import { ROUTES } from "./ROUTES";
+import Interesting from "../pages/Interesting/Interesting";
 
 
 const ScrollToTop = () => {
@@ -44,6 +45,10 @@ export const router = createHashRouter([
         path: ROUTES.lesson(),
         element: <Lesson />,
         loader: fetchLessonByIdRouted,
+      },
+      {
+        path:  "/interesting_first_line",
+        element: <Interesting/>,
       },
       {
         path: ROUTES.second_line,

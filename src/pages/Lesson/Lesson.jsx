@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link, useLoaderData } from "react-router-dom";
 import "./lesson.scss";
 import LessonList from "../../components/LessonList/LessonList";
+import Banner from "../../components/Banner/Banner";
 
 export default function Lesson() {
   const lesson = useLoaderData();
@@ -10,6 +11,7 @@ export default function Lesson() {
   return (
     <>
       <main>
+        {/* <Banner title={lesson.title} text={lesson.name} bgLite={true}/> */}
         <section className=" banner-lesson">
           <div className="lesson-wrapp">
             <h1 className="lesson-title h2">{lesson.title}</h1>
