@@ -1,1 +1,13 @@
 @import "/src/scss/variables.scss";
+
+.interesting-wrapp {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.interesting-img-blc{
+  img{
+    width: 300px;
+    height: 300px;
+  }
+}

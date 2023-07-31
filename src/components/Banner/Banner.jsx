@@ -6,7 +6,7 @@ export default function Banner({ title, text, bgStyle, bgLite }) {
   // text - short text
   // bgStyle - background style color for general pages
   // bgLite - true / false - banner type2 for another pages banner
-  
+
   return (
     <section
       className={

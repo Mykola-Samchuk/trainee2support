@@ -226,5 +226,13 @@
     }
   ],
   "two": [],
-  "third": []
+  "third": [],
+  "interest-firstLine":[
+    {
+      "id": 101,
+      "title": "Потрібно встановити дані",
+      "img":"/public/img-data/101.jpg"
+      
+    }
+  ]
 }
