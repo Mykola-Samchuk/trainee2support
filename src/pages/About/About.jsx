@@ -6,6 +6,7 @@ import icon2 from "./img/icons8.png";
 import icon3 from "./img/icons5.png";
 import icon4 from "./img/icons6.png";
 import Banner from "../../components/Banner/Banner";
+import { NavLink } from "react-router-dom";
 
 export default function About() {
   const bgStyles = {
@@ -120,6 +121,7 @@ export default function About() {
               апарат, допомагає бізнесу вбивати на корені бюрократію та
               економити масу ресурсів та грошей
             </p>
+            <NavLink to="https://docs.google.com/presentation/d/1RkHZbLWcN5a6y1_4uQHQOBtYLDfuVvPwLaChrsff1Os/edit#slide=id.g25d5c2dd58c_2_27" target="blank" className="btn ">Детальніше</NavLink>
           </div>
         </div>
       </section>
