@@ -25,7 +25,7 @@ export default function Interesting() {
       <section className="section-content">
         <div className="interesting-wrapp">
           <div className="interesting-img-blc">
-            <img src={path + image} alt="img" />
+            {/* <img src={path + image} alt="img"/> */}
             <img src="/trainee2support/img/imgtest.jpg" alt="img" />
           </div>
           <div className="interesting-title"></div>
