@@ -1,13 +1,15 @@
 import React from "react";
 import "./interesting.scss";
 import Banner from "../../components/Banner/Banner";
-import img from "./img/racoon-checkbox-01.png";
+// import img from "./img/racoon-checkbox-01.png";
 
 export default function Interesting() {
+  const path = process.env.PUBLIC_URL;
+  const image = "/img/imgtest.jpg";
   return (
     <main>
       <Banner title={"Цікаво знати"} text={"Перша лінія"} bgLite={true} />
-      <section className="section-content section-content">
+      {/* <section className="section-content section-content">
         <div className="spacer-xl"></div>
         <div className="content-blc-full">
           <div className="progress-wrapp">
@@ -19,16 +21,17 @@ export default function Interesting() {
             </div>
           </div>
         </div>
-      </section>
-      {/* <section className="section-content">
+      </section> */}
+      <section className="section-content">
         <div className="interesting-wrapp">
           <div className="interesting-img-blc">
-            <img src="imgtest.jpg" alt="img" />
+            <img src={path + image} alt="img" />
+            <img src="/trainee2support/img/imgtest.jpg" alt="img" />
           </div>
           <div className="interesting-title"></div>
           <div className="interesting-option"></div>
         </div>
-      </section> */}
+      </section>
     </main>
   );
 }
