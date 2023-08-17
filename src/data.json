@@ -227,12 +227,69 @@
   ],
   "two": [],
   "third": [],
-  "interest-firstLine":[
+  "interestFirstLine": [
     {
       "id": 101,
-      "title": "Потрібно встановити дані",
-      "img":"/public/img-data/101.jpg"
-      
+      "type":"portal",
+      "title": "test",
+      "info": "lhsf sdf sdfsbhsdb hsdb fhsdb fhksdbd fhksbhksdbdfhbsd hfb shdb shb hsdb jsdbhj dsb hjdsfb hdsfj bdsfhb dsfb hjd hgdf hgbd gdsgsjfk bgdsf bjhdsbgjdfbgjdbg bdfg d",
+      "img": "/imges/imgtest.jpg"
+    },
+    {
+      "id": 102,
+      "type":"billing",
+      "title": "test",
+      "info": "lhsf sdf sdfsbhsdb hsdb fhsdb fhksdbd fhksbhksdbdfhbsd hfb shdb shb hsdb jsdbhj dsb hjdsfb hdsfj bdsfhb dsfb hjd hgdf hgbd gdsgsjfk bgdsf bjhdsbgjdfbgjdbg bdfg d",
+      "img": "/imges/imgtest.jpg"
+    },
+    {
+      "id": 103,
+      "type":"kasa",
+      "title": "test",
+      "info": "lhsf sdf sdfsbhsdb hsdb fhsdb fhksdbd fhksbhksdbdfhbsd hfb shdb shb hsdb jsdbhj dsb hjdsfb hdsfj bdsfhb dsfb hjd hgdf hgbd gdsgsjfk bgdsf bjhdsbgjdfbgjdbg bdfg d",
+      "img": "/imges/imgtest.jpg"
+    },
+    {
+      "id": 104,
+      "type":"dps",
+      "title": "test",
+      "info": "lhsf sdf sdfsbhsdb hsdb fhsdb fhksdbd fhksbhksdbdfhbsd hfb shdb shb hsdb jsdbhj dsb hjdsfb hdsfj bdsfhb dsfb hjd hgdf hgbd gdsgsjfk bgdsf bjhdsbgjdfbgjdbg bdfg d",
+      "img": "/imges/imgtest.jpg"
+    },
+    {
+      "id": 105,
+      "type":"android app",
+      "title": "test",
+      "info": "lhsf sdf sdfsbhsdb hsdb fhsdb fhksdbd fhksbhksdbdfhbsd hfb shdb shb hsdb jsdbhj dsb hjdsfb hdsfj bdsfhb dsfb hjd hgdf hgbd gdsgsjfk bgdsf bjhdsbgjdfbgjdbg bdfg d",
+      "img": "/imges/imgtest.jpg"
+    },
+    {
+      "id": 106,
+      "type":"ios app",
+      "title": "test",
+      "info": "lhsf sdf sdfsbhsdb hsdb fhsdb fhksdbd fhksbhksdbdfhbsd hfb shdb shb hsdb jsdbhj dsb hjdsfb hdsfj bdsfhb dsfb hjd hgdf hgbd gdsgsjfk bgdsf bjhdsbgjdfbgjdbg bdfg d",
+      "img": "/imges/imgtest.jpg"
+    },
+    {
+      "id": 107,
+      "type":"pay link",
+      "title": "test",
+      "info": "lhsf sdf sdfsbhsdb hsdb fhsdb fhksdbd fhksbhksdbdfhbsd hfb shdb shb hsdb jsdbhj dsb hjdsfb hdsfj bdsfhb dsfb hjd hgdf hgbd gdsgsjfk bgdsf bjhdsbgjdfbgjdbg bdfg d",
+      "img": "/imges/imgtest.jpg"
+    },
+    {
+      "id": 108,
+      "type":"portal",
+      "title": "test",
+      "info": "lhsf sdf sdfsbhsdb hsdb fhsdb fhksdbd fhksbhksdbdfhbsd hfb shdb shb hsdb jsdbhj dsb hjdsfb hdsfj bdsfhb dsfb hjd hgdf hgbd gdsgsjfk bgdsf bjhdsbgjdfbgjdbg bdfg d",
+      "img": "/imges/imgtest.jpg"
+    },
+    {
+      "id": 109,
+      "type":"portal",
+      "title": "test",
+      "info": "fk bgdsf bjhdsbgjdfbgjdbg bdfg d",
+      "img": "/imges/imgtest.jpg"
     }
   ]
 }

@@ -456,7 +456,9 @@ section {
   padding-left: 40px;
   padding-right: 40px;
 }
-
+.section-content.full-height{
+  height: 100vh;
+}
 @media (min-width:1200px) {
   .section-content{
     max-width: 1400px;

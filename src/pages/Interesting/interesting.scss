@@ -5,9 +5,121 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-.interesting-img-blc{
-  img{
+.interesting-img-blc {
+  img {
     width: 300px;
     height: 300px;
+  }
+}
+
+.interest-card {
+  position: relative;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 16px;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #c6c6c6;
+  border-radius: 20px;
+  box-shadow: 0px 0px 21px -4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.interested-type {
+  position: absolute;
+  min-width: 100px;
+  height: 20px;
+  top: -20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: wheat;
+  font-size: 8px;
+  // background-color: rgb(158, 40, 173);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  p {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+  }
+}
+.interested-type.blue {
+  background-color: $blue-hover;
+}
+.interested-type.purple {
+  background-color: $purple-clr;
+}
+.interested-type.black {
+  background-color: $black-clr;
+}
+.interested-type.orange {
+  background-color: $orange-link;
+}
+.interested-type.green {
+  background-color: $green-clr;
+}
+.interested-type.grey {
+  background-color: $grey-clr-type2;
+}
+.interest-img {
+  overflow: hidden;
+  padding-top: 60%;
+  position: relative;
+}
+
+.interest-img img {
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.interest-title-wrapp {
+  margin-bottom: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.interest-title-wrapp .title {
+  margin-bottom: 10px;
+}
+
+.title h3 {
+  font-size: 20px;
+}
+@media (min-width: 1200px) {
+  .interest-card:hover {
+    box-shadow: 0px 0px 21px 0px $purple-clr;
+  }
+}
+.card-content {
+  min-width: 600px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .card-img {
+    overflow: hidden;
+    padding-top: 40%;
+    position: relative;
+    img {
+      height: 100%;
+      object-fit: contain;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 1199px) {
+  .card-content {
+    min-width: 0;
   }
 }
